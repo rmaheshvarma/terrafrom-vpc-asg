@@ -32,6 +32,14 @@ variable "private_subnet_cidr_blocks" {
   description = "List of private subnet CIDR blocks"
 }
 
+variable "rds_private_subnet_cidr_blocks" {
+  default     = ["10.0.30.0/24", "10.0.40.0/24"]
+  type        = list
+  description = "List of private subnet CIDR blocks"
+}
+
+
+
 variable "availability_zones" {
   default     = ["us-east-1a", "us-east-1b"]
   type        = list

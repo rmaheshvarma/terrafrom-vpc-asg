@@ -90,3 +90,9 @@ resource "aws_nat_gateway" "default" {
   subnet_id     = aws_subnet.public[count.index].id
 }
  
+
+
+
+
+
+
